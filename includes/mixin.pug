@@ -1,0 +1,24 @@
+//- list oF Navbar
+mixin list
+  ul(class="links d-flex align-items-center p-0 m-0 list-unstyled gap-4 text-light")
+    li(class="active" data-section=".app") Home
+    li(data-section=".about") About
+    li(data-section=".skills") Skills
+    li(data-section=".gallery") Gallery
+    li(data-section=".timeline") Timeline
+    li(data-section=".feature") Feature
+    li(data-section=".testmonials") Testmonials
+
+
+//- End List oF Navbar
+
+
+//- ul For Color's List
+
+mixin Color
+  ul(class="color-option d-flex justify-content-between gap-2 align-items-center p-0 m-0 list-unstyled mt-3")
+    li(class="active", data-color="#2196f3")
+    li(data-color="#FF9800")
+    li(data-color="#E91E63")
+    li(data-color="#009688")
+    li(data-color="#4CAF50")

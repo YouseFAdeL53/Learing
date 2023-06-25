@@ -1,0 +1,266 @@
+include includes/mixin.pug
+doctype
+html
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="CSS/bootstrap.min.css")
+    link(rel="stylesheet", href="CSS/all.min.css")
+    link(rel="stylesheet" href="CSS/main.css")
+    title Project
+  body
+    //Scroller
+    .scroller
+    // Button-up
+    |
+    |
+    .up <i class="fa-solid fa-arrow-up"></i>
+    |
+    |
+    .whatsapp <i class="fa-brands fa-whatsapp fa-shake"></i>
+    //- Start Setting-Box
+    .setting-box
+      .icon
+        <i class="fa-solid fa-gear"></i>
+      .option-box
+        h2 Color's
+        +Color
+      .option-box
+        h2 Background
+        .option-Background
+          span(class="yes active", id="yes", data-background="yes") Yes
+          span(class="no", id="no", data-background="no") No
+      .option-box
+        h2 Show Bulltes
+        .option-bullte
+          span(class="yes active", id="yes", data-bullte="show") Yes
+          span(class="no", id="no", data-bullte="hide") No
+      select(class="fonts")
+        option(value="Open sans") Open Sans
+        option(value="Roboto") Roboto
+        option(value="Poppins") Poppins
+        option(value="Tajawal") Tajawal
+        option(value="Montserrat") Montserrat
+        option(value="Belanosima") Belanosima
+      button(class="reset") Reset Options
+    //- End Setting-Box
+    // Nav Bulltes
+    ul(class="nav-builtes")
+      div(class="built active" data-section=".app")
+        span(class="tool-tip") Home
+      div(class="built" data-section=".about")
+        span(class="tool-tip") About
+      div(class="built" data-section=".skills")
+        span(class="tool-tip") Skills
+      div(class="built" data-section=".gallery")
+        span(class="tool-tip") Gallery
+      div(class="built" data-section=".timeline")
+        span(class="tool-tip") TimeLine
+      div(class="built" data-section=".feature")
+        span(class="tool-tip") Feature
+      div(class="built" data-section=".testmonials")
+        span(class="tool-tip") Testmonials
+    // Start Landing
+    include includes/header.pug
+    // End Landing
+    //- Start About
+    div(class="about pt-5 pb-5 scroll" id="about")
+      .container
+        div(class="row align-items-center")
+          div(class="col-md-12 col-lg-6")
+            div(class="main-title text-center")
+              h2 About-us
+                span
+              p(class="lh-lg ") Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, deserunt perspiciatis. Ipsam in repudiandae quod iure dicta error vel ipsa. Laborum eligendi praesentium doloribus repudiandae harum eius vitae, commodi sed!
+          div(class="col-md-12 col-lg-6")
+            div(class="image text-center")
+              img(src="image/about.svg")
+    //- End About
+    // theSpikes
+    div(class="spikes position-relative")
+    // End Spikes
+    //- start skills
+    div(class="skills text-center scroll" id="skills")
+      .container
+        .main-title
+          h2 Our-Skills
+            span
+        include includes/skills.pug
+    //- End Skills
+    // theSpikes down
+    div(class="spikes-down position-relative")
+    // End Spikes down
+    // Start Gallery
+    .gallery
+      .container
+        .main-title
+          h2 Our-Gallery
+            span
+        .content
+          img(src="image/gallery01.webp" class="img-fluid" alt="image-One")
+          img(src="image/gallery02.webp" class="img-fluid" alt="image-Two")
+          img(src="image/gallery03.webp" class="img-fluid" alt="image-Three")
+          img(src="image/gallery04.webp" class="img-fluid" alt="image-Four")
+          img(src="image/gallery05.webp" class="img-fluid" alt="image-Five")
+          img(src="image/gallery06.webp" class="img-fluid" alt="image-Six")
+          img(src="image/gallery07.webp" class="img-fluid" alt="image-Seven")
+          img(src="image/gallery08.webp" class="img-fluid" alt="image-Eight")
+          img(src="image/gallery09.webp" class="img-fluid" alt="image-Nine")
+          img(src="image/gallery010.webp" class="img-fluid" alt="image-Ten")
+    // End Gallery
+    .spikes
+    // Start TimeLine
+    .timeline
+      .container
+        .timline-content
+          .year 2020
+          .box-left
+            h2 Test Heading
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam id odit laboriosam inventore, harum alias.
+          .box-right
+            h2 Test Heading
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam id odit laboriosam inventore, harum alias.
+          .year 2021
+          .box-left
+            h2 Test Heading
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam id odit laboriosam inventore, harum alias.
+          .box-left
+            h2 Test Heading
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam id odit laboriosam inventore, harum alias.
+          .year 2022
+          .box-right
+            h2 Test Heading
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam id odit laboriosam inventore, harum alias.
+          .box-right
+            h2 Test Heading
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam id odit laboriosam inventore, harum alias.
+          .year 2023
+          .box-left
+            h2 Test Heading
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam id odit laboriosam inventore, harum alias.
+          .box-right
+            h2 Test Heading
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam id odit laboriosam inventore, harum alias.
+    // End TimeLine
+    .spikes-down
+    // Start Slider
+    .slider
+        div(class="box")
+          .image
+            img(src="image/1.jpg")
+          h2(data-name="Yousef") Yousef
+        .box
+          .image
+            img(src="image/2.jpg")
+          h2(data-name="Kareem") Kareem
+        .box
+          .image
+            img(src="image/3.jpg")
+          h2(data-name="Nasser") Nasser
+        .box
+          .image
+            img(src="image/4.jpg")
+          h2(data-name="Moamen") Moamen
+        .box
+          .image
+            img(src="image/5.jpg")
+          h2(data-name="Mahmoud") Mahmoud
+        .box
+          .image
+            img(src="image/6.jpg")
+          h2(data-name="Yehia") Yehia
+        .box
+          .image
+            img(src="image/7.jpg")
+          h2(data-name="Walid") Walid
+        .arrows
+          i(class="fa-solid fa-angles-left prev")
+          i(class="fa-solid fa-angles-right next")
+    // End Slider
+    // Start Feature
+    .feature
+      .container
+        .main-title
+          h2 Our Feature
+            span
+        .feat-content
+          .box
+            img(src="image/programming.svg")
+            .text
+              h2 Graphic Design
+              p We Are Professional Marketeers, We Will Do Anything You Imagine In No Time.
+          .box
+            img(src="image/graphic-design.svg")
+            .text
+              h2 Mobile Develope
+              p We Are Professional Marketeers, We Will Do Anything You Imagine In No Time.
+          .box
+            img(src="image/mobile-app.svg")
+            .text
+              h2 SEO
+              p We Are Professional Marketeers, We Will Do Anything You Imagine In No Time.
+          .box
+            img(src="image/hosting-icon.svg")
+            .text
+              h2 Hosting
+              p We Are Professional Marketeers, We Will Do Anything You Imagine In No Time.
+          .box
+            img(src="image/web-design.svg")
+            .text
+              h2 Development
+              p We Are Professional Marketeers, We Will Do Anything You Imagine In No Time.
+          .box
+            img(src="image/adv.svg")
+            .text
+              h2 Marketing
+              p We Are Professional Marketeers, We Will Do Anything You Imagine In No Time.
+    // End Feature
+    // Start Testmonials
+    .testmonials
+      .container
+        h2.type Testmonials
+        .test-content
+          .box
+            p Iam very happy with the product its amazing and i recieve it very fast and the price was amazing.
+            div(class="info d-flex align-items-center gap-2")
+              img(src="image/avatar-01.png")
+              .text
+                h2 YouseF AdeL
+                .stars
+                  i(class="fa-solid fa-star")
+                  i(class="fa-solid fa-star")
+                  i(class="fa-solid fa-star")
+                  i(class="fa-solid fa-star")
+                  i(class="fa-solid fa-star")
+                span Ceo At Company
+          .box
+            p Iam very happy with the product its amazing and i recieve it very fast and the price was amazing.
+            div(class="info d-flex align-items-center gap-2")
+              img(src="image/avatar-02.png")
+              .text
+                h2 YouseF AdeL
+                .stars
+                  i(class="fa-solid fa-star")
+                  i(class="fa-solid fa-star")
+                  i(class="fa-solid fa-star")
+                  i(class="fa-solid fa-star")
+                  i(class="fa-solid fa-star")
+                span Ceo At Company
+          .box
+            p Iam very happy with the product its amazing and i recieve it very fast and the price was amazing.
+            div(class="info d-flex align-items-center gap-2")
+              img(src="image/avatar-01.png")
+              .text
+                h2 YouseF AdeL
+                .stars
+                  i(class="fa-solid fa-star")
+                  i(class="fa-solid fa-star")
+                  i(class="fa-solid fa-star")
+                  i(class="fa-solid fa-star")
+                  i(class="fa-solid fa-star")
+                span Ceo At Company
+    // End Testmonials
+    // The End Footer
+    .footer Created by #[span YouseF AdeL] <i class="fa-solid fa-heart"></i>
+    script(src="JS/bootstrap.bundle.min.js")
+    script(src="JS/main.js")

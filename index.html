@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <title>Project</title>
+  </head>
+  <body>
+    <!--Scroller-->
+    <div class="scroller"></div>
+    <!-- Button-up-->
+    
+    <div class="up"><i class="fa-solid fa-arrow-up"></i></div>
+    
+    <div class="whatsapp"><i class="fa-brands fa-whatsapp fa-shake"></i></div>
+    <div class="setting-box">
+      <div class="icon"><i class="fa-solid fa-gear"></i></div>
+      <div class="option-box">
+        <h2>Color's</h2>
+        <ul class="color-option d-flex justify-content-between gap-2 align-items-center p-0 m-0 list-unstyled mt-3">
+          <li class="active" data-color="#2196f3"></li>
+          <li data-color="#FF9800"></li>
+          <li data-color="#E91E63"></li>
+          <li data-color="#009688"></li>
+          <li data-color="#4CAF50"></li>
+        </ul>
+      </div>
+      <div class="option-box">
+        <h2>Background</h2>
+        <div class="option-Background"><span class="yes active" id="yes" data-background="yes">Yes</span><span class="no" id="no" data-background="no">No</span></div>
+      </div>
+      <div class="option-box">
+        <h2>Show Bulltes</h2>
+        <div class="option-bullte"><span class="yes active" id="yes" data-bullte="show">Yes</span><span class="no" id="no" data-bullte="hide">No</span></div>
+      </div>
+      <select class="fonts">
+        <option value="Open sans">Open Sans</option>
+        <option value="Roboto">Roboto</option>
+        <option value="Poppins">Poppins</option>
+        <option value="Tajawal">Tajawal</option>
+        <option value="Montserrat">Montserrat</option>
+        <option value="Belanosima">Belanosima</option>
+      </select>
+      <button class="reset">Reset Options</button>
+    </div>
+    <!-- Nav Bulltes-->
+    <ul class="nav-builtes">
+      <div class="built active" data-section=".app"><span class="tool-tip">Home</span></div>
+      <div class="built" data-section=".about"><span class="tool-tip">About</span></div>
+      <div class="built" data-section=".skills"><span class="tool-tip">Skills</span></div>
+      <div class="built" data-section=".gallery"><span class="tool-tip">Gallery</span></div>
+      <div class="built" data-section=".timeline"><span class="tool-tip">TimeLine</span></div>
+      <div class="built" data-section=".feature"><span class="tool-tip">Feature</span></div>
+      <div class="built" data-section=".testmonials"><span class="tool-tip">Testmonials</span></div>
+    </ul>
+    <!-- Start Landing-->
+    <!-- Header -->
+    <div class="app scroll" id="app">
+      <div class="container">
+        <div class="header-area d-flex align-items-center justify-content-between"><a class="logo fs-3 text-decoration-none text-light fw-bold" href="index.html">Special Design</a><i class="fa-solid fa-bars toggle fa-shake"></i>
+          <ul class="links d-flex align-items-center p-0 m-0 list-unstyled gap-4 text-light">
+            <li class="active" data-section=".app">Home</li>
+            <li data-section=".about">About</li>
+            <li data-section=".skills">Skills</li>
+            <li data-section=".gallery">Gallery</li>
+            <li data-section=".timeline">Timeline</li>
+            <li data-section=".feature">Feature</li>
+            <li data-section=".testmonials">Testmonials</li>
+          </ul>
+        </div>
+        <div class="introduction-text position-absolute text-center text-light">
+          <h2 class="fs-1 fw-bold">We Are <span>Creative</span> Agency</h2>
+          <p class="text-white-50 lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quam porro perferendis quasi optio modi.</p>
+        </div>
+      </div>
+    </div>
+    <!-- End Landing-->
+    <div class="about pt-5 pb-5 scroll" id="about">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-12 col-lg-6">
+            <div class="main-title text-center">
+              <h2>About-us<span></span></h2>
+              <p class="lh-lg ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, deserunt perspiciatis. Ipsam in repudiandae quod iure dicta error vel ipsa. Laborum eligendi praesentium doloribus repudiandae harum eius vitae, commodi sed!</p>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-6">
+            <div class="image text-center"><img src="image/about.svg"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- theSpikes-->
+    <div class="spikes position-relative"></div>
+    <!-- End Spikes-->
+    <div class="skills text-center scroll" id="skills">
+      <div class="container">
+        <div class="main-title">
+          <h2>Our-Skills<span></span></h2>
+        </div>
+        <!-- Skills Box-->
+        <div class="box">
+          <h2>html</h2>
+          <div class="progressbar"><span data-width="95%"></span></div>
+        </div>
+        <div class="box">
+          <h2>Css</h2>
+          <div class="progressbar"><span data-width="85%"></span></div>
+        </div>
+        <div class="box">
+          <h2>javaScript</h2>
+          <div class="progressbar"><span data-width="75%"></span></div>
+        </div>
+        <div class="box">
+          <h2>bootstrap</h2>
+          <div class="progressbar"><span data-width="90%"></span></div>
+        </div>
+        <div class="box">
+          <h2>sass</h2>
+          <div class="progressbar"><span data-width="80%"></span></div>
+        </div>
+        <div class="box">
+          <h2>pugJs</h2>
+          <div class="progressbar"><span data-width="85%"></span></div>
+        </div>
+      </div>
+    </div>
+    <!-- theSpikes down-->
+    <div class="spikes-down position-relative"></div>
+    <!-- End Spikes down-->
+    <!-- Start Gallery-->
+    <div class="gallery">
+      <div class="container">
+        <div class="main-title">
+          <h2>Our-Gallery<span></span></h2>
+        </div>
+        <div class="content"><img class="img-fluid" src="image/gallery01.webp" alt="image-One"><img class="img-fluid" src="image/gallery02.webp" alt="image-Two"><img class="img-fluid" src="image/gallery03.webp" alt="image-Three"><img class="img-fluid" src="image/gallery04.webp" alt="image-Four"><img class="img-fluid" src="image/gallery05.webp" alt="image-Five"><img class="img-fluid" src="image/gallery06.webp" alt="image-Six"><img class="img-fluid" src="image/gallery07.webp" alt="image-Seven"><img class="img-fluid" src="image/gallery08.webp" alt="image-Eight"><img class="img-fluid" src="image/gallery09.webp" alt="image-Nine"><img class="img-fluid" src="image/gallery010.webp" alt="image-Ten"></div>
+      </div>
+    </div>
+    <!-- End Gallery-->
+    <div class="spikes"></div>
+    <!-- Start TimeLine-->
+    <div class="timeline">
+      <div class="container">
+        <div class="timline-content">
+          <div class="year">2020</div>
+          <div class="box-left">
+            <h2>Test Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam id odit laboriosam inventore, harum alias.</p>
+          </div>
+          <div class="box-right">
+            <h2>Test Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam id odit laboriosam inventore, harum alias.</p>
+          </div>
+          <div class="year">2021</div>
+          <div class="box-left">
+            <h2>Test Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam id odit laboriosam inventore, harum alias.</p>
+          </div>
+          <div class="box-left">
+            <h2>Test Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam id odit laboriosam inventore, harum alias.</p>
+          </div>
+          <div class="year">2022</div>
+          <div class="box-right">
+            <h2>Test Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam id odit laboriosam inventore, harum alias.</p>
+          </div>
+          <div class="box-right">
+            <h2>Test Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam id odit laboriosam inventore, harum alias.</p>
+          </div>
+          <div class="year">2023</div>
+          <div class="box-left">
+            <h2>Test Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam id odit laboriosam inventore, harum alias.</p>
+          </div>
+          <div class="box-right">
+            <h2>Test Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam id odit laboriosam inventore, harum alias.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End TimeLine-->
+    <div class="spikes-down"></div>
+    <!-- Start Slider-->
+    <div class="slider">
+      <div class="box">
+        <div class="image"><img src="image/1.jpg"></div>
+        <h2 data-name="Yousef">Yousef</h2>
+      </div>
+      <div class="box">
+        <div class="image"><img src="image/2.jpg"></div>
+        <h2 data-name="Kareem">Kareem</h2>
+      </div>
+      <div class="box">
+        <div class="image"><img src="image/3.jpg"></div>
+        <h2 data-name="Nasser">Nasser</h2>
+      </div>
+      <div class="box">
+        <div class="image"><img src="image/4.jpg"></div>
+        <h2 data-name="Moamen">Moamen</h2>
+      </div>
+      <div class="box">
+        <div class="image"><img src="image/5.jpg"></div>
+        <h2 data-name="Mahmoud">Mahmoud</h2>
+      </div>
+      <div class="box">
+        <div class="image"><img src="image/6.jpg"></div>
+        <h2 data-name="Yehia">Yehia</h2>
+      </div>
+      <div class="box">
+        <div class="image"><img src="image/7.jpg"></div>
+        <h2 data-name="Walid">Walid</h2>
+      </div>
+      <div class="arrows"><i class="fa-solid fa-angles-left prev"></i><i class="fa-solid fa-angles-right next"></i></div>
+    </div>
+    <!-- End Slider-->
+    <!-- Start Feature-->
+    <div class="feature">
+      <div class="container">
+        <div class="main-title">
+          <h2>Our Feature<span></span></h2>
+        </div>
+        <div class="feat-content">
+          <div class="box"><img src="image/programming.svg">
+            <div class="text">
+              <h2>Graphic Design</h2>
+              <p>We Are Professional Marketeers, We Will Do Anything You Imagine In No Time.</p>
+            </div>
+          </div>
+          <div class="box"><img src="image/graphic-design.svg">
+            <div class="text">
+              <h2>Mobile Develope</h2>
+              <p>We Are Professional Marketeers, We Will Do Anything You Imagine In No Time.</p>
+            </div>
+          </div>
+          <div class="box"><img src="image/mobile-app.svg">
+            <div class="text">
+              <h2>SEO</h2>
+              <p>We Are Professional Marketeers, We Will Do Anything You Imagine In No Time.</p>
+            </div>
+          </div>
+          <div class="box"><img src="image/hosting-icon.svg">
+            <div class="text">
+              <h2>Hosting</h2>
+              <p>We Are Professional Marketeers, We Will Do Anything You Imagine In No Time.</p>
+            </div>
+          </div>
+          <div class="box"><img src="image/web-design.svg">
+            <div class="text">
+              <h2>Development</h2>
+              <p>We Are Professional Marketeers, We Will Do Anything You Imagine In No Time.</p>
+            </div>
+          </div>
+          <div class="box"><img src="image/adv.svg">
+            <div class="text">
+              <h2>Marketing</h2>
+              <p>We Are Professional Marketeers, We Will Do Anything You Imagine In No Time.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Feature-->
+    <!-- Start Testmonials-->
+    <div class="testmonials">
+      <div class="container">
+        <h2 class="type">Testmonials</h2>
+        <div class="test-content">
+          <div class="box">
+            <p>Iam very happy with the product its amazing and i recieve it very fast and the price was amazing.</p>
+            <div class="info d-flex align-items-center gap-2"><img src="image/avatar-01.png">
+              <div class="text">
+                <h2>YouseF AdeL</h2>
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div><span>Ceo At Company</span>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <p>Iam very happy with the product its amazing and i recieve it very fast and the price was amazing.</p>
+            <div class="info d-flex align-items-center gap-2"><img src="image/avatar-02.png">
+              <div class="text">
+                <h2>YouseF AdeL</h2>
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div><span>Ceo At Company</span>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <p>Iam very happy with the product its amazing and i recieve it very fast and the price was amazing.</p>
+            <div class="info d-flex align-items-center gap-2"><img src="image/avatar-01.png">
+              <div class="text">
+                <h2>YouseF AdeL</h2>
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div><span>Ceo At Company</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Testmonials-->
+    <!-- The End Footer-->
+    <div class="footer">Created by <span>YouseF AdeL</span> <i class="fa-solid fa-heart"></i></div>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/main.js"></script>
+  </body>
+</html>

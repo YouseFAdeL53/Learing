@@ -1,0 +1,21 @@
+%flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+%section {
+  background-color: #EEE;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+%section-white{
+  background-color: #FFF;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+%grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+}
